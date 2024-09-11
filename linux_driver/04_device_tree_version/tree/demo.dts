@@ -1,0 +1,15 @@
+/ {
+	 myled: led_devices@0x020C406C{
+        #address-cells = <1>;
+        #size-cells = <1>;
+        compatible = "100ask,leds";
+        reg = <
+                0x020C406C 0x00000004 
+                0x02290014 0x00000004 
+                0x02290058 0x00000004 
+                0x020AC004 0x00000004 
+                0x020AC000 0x00000004
+            >;  // 假设这个是GPIO基地址和偏移
+        status = "okay";
+    };
+}
